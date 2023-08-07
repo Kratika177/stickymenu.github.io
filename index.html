@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background changer</title>
+    <style>
+        body{
+            text-align: center;
+            margin:20px
+        }
+        .sticky{
+            position:fixed;
+            top:0px;
+            width:100%;
+        }
+        .menu{
+            
+            display: flex;
+            background-color: rgb(12, 72, 12);
+            color:white;
+            justify-content: center;
+        }
+        .item{
+            margin:10px;
+            font-size: 20px;
+            font-weight: bolder;
+            padding:10px;
+            text-align: center;
+        }
+        .div{
+            width:70vw;
+            text-align: justify;
+            column-width: 3000px;
+            column-count: 2;
+            column-gap: 10px;
+            
+        }
+        .img{
+            width:70vw;
+            height: 40vh;
+        }
+    </style>
+</head>
+<body>
+    
+    <center>
+    <img class="logo" src="png-logos-1.png" width="100" height="100">
+    <div class="menu" id="colors">
+        <span class="item" id="red" >Home</span>
+        <span class="item" id="blue" >About us</span>
+        <span class="item"  id= "pink" >Contact us</span>
+        <span class="item" id="green" >Services</span>
+    </div>
+
+    <h1>Sticky menu Website</h1>
+    <img src="https://source.unsplash.com/random/flower" class="img">
+    <div class="div">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quo reiciendis necessitatibus alias amet itaque iste inventore tenetur unde at nostrum, sunt, sed laborum tempora voluptas placeat quos voluptates repudiandae. Quod ratione exercitationem et reiciendis tempore laboriosam dolore sunt! Impedit, ea, explicabo amet ducimus quibusdam soluta sequi dolores totam alias adipisci nulla error aspernatur voluptatibus sint ullam laborum quae pariatur eum autem, ut non dicta nam aperiam? Optio placeat voluptate, earum doloribus reiciendis soluta illum quia magnam autem, nobis, voluptates repellendus. Deleniti minus repellendus similique at sint enim dignissimos fuga ut cupiditate possimus ullam, non, sapiente recusandae illo rerum? Soluta?Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita debitis quaerat earum tempore? Eos facilis consequatur vero doloribus earum unde exercitationem sunt! Eius mollitia a expedita error at repudiandae, ea maiores et velit aspernatur quos vero, veritatis ex voluptatum iste. Laborum, reprehenderit minus! Deleniti id atque magnam recusandae, quidem libero quibusdam beatae distinctio voluptatem facilis corrupti praesentium magni vel quisquam blanditiis quo. Consequuntur perferendis qui porro. Dolorum saepe quis unde autem nam rerum sequi, blanditiis cumque corrupti veniam voluptas reiciendis tenetur a minima voluptatum obcaecati facilis architecto rem iusto odit necessitatibus officiis! Consequuntur, alias. Eaque quam tempore quos eius amet!lorem100
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus doloribus voluptatem inventore deleniti exercitationem quam molestiae perferendis saepe amet aliquam repellendus sit maiores voluptatum deserunt expedita natus perspiciatis possimus earum, quidem ipsa unde rerum vitae atque. Quia reprehenderit architecto atque ab sequi, quaerat incidunt alias dolorem voluptates modi eos dicta, veniam tempora deleniti ullam saepe, culpa voluptatum dolore deserunt numquam suscipit earum quidem rem. Excepturi quos, nihil eos necessitatibus eius fugiat tempore explicabo illo laudantium repellat obcaecati ad quo libero quisquam natus consequatur porro debitis repellendus quas nesciunt. Odio animi porro ipsam impedit a neque tempora, voluptas reiciendis eveniet corporis quisquam doloremque et consequatur voluptatum? Dolore a aperiam, officia saepe similique consequatur veniam quaerat unde molestias repellat possimus repellendus incidunt, rem adipisci officiis quibusdam at, non totam eaque delectus. In nemo debitis reprehenderit doloribus quis reiciendis, iste nihil eum, consectetur quaerat, esse voluptas necessitatibus! Corporis magnam, beatae commodi expedita nostrum ea non et vitae repellendus delectus. Laborum ducimus fugit ipsum ea libero alias saepe aperiam ad quasi reprehenderit? Asperiores fugit facere, nihil consequuntur sequi totam voluptas dicta ducimus voluptatibus nostrum in provident laboriosam aliquam minima accusamus assumenda adipisci harum eligendi. Voluptates ea iure voluptatem ducimus debitis ad quae possimus natus?loren300
+
+    </div>
+</center>
+
+
+    <script>
+        let men=document.getElementById("colors");
+        window.addEventListener('scroll',function(){
+            if(window.pageYOffset>=114){
+                men.classList.add('sticky');
+            }
+            else{
+                men.classList.remove('sticky');
+            }
+        })
+    </script>
+</body>
+</html>
